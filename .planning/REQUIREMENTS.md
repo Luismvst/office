@@ -197,17 +197,115 @@ Requirements for MVP1. Each maps to exactly one roadmap phase.
 
 ## Traceability
 
-Filled by the roadmapper. Empty for now.
+Every v1 requirement is mapped to exactly one phase. Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| _(populated after roadmap creation)_ | | |
+| FND-01 | Phase 1 | Pending |
+| FND-02 | Phase 1 | Pending |
+| FND-03 | Phase 1 | Pending |
+| FND-04 | Phase 1 | Pending |
+| FND-05 | Phase 1 | Pending |
+| FND-06 | Phase 1 | Pending |
+| AUTH-01 | Phase 1 | Pending |
+| AUTH-02 | Phase 1 | Pending |
+| AUTH-03 | Phase 1 | Pending |
+| AUTH-04 | Phase 1 | Pending |
+| AUTH-05 | Phase 1 | Pending |
+| AGENT-08 | Phase 1 | Pending |
+| DEP-01 | Phase 1 | Pending |
+| DEP-03 | Phase 1 | Pending |
+| VAULT-01 | Phase 2 | Pending |
+| VAULT-02 | Phase 2 | Pending |
+| VAULT-03 | Phase 2 | Pending |
+| VAULT-04 | Phase 2 | Pending |
+| VAULT-05 | Phase 2 | Pending |
+| VAULT-06 | Phase 2 | Pending |
+| VAULT-07 | Phase 2 | Pending |
+| PROV-01 | Phase 2 | Pending |
+| PROV-04 | Phase 2 | Pending |
+| PROV-05 | Phase 2 | Pending |
+| SEC-04 | Phase 2 | Pending |
+| SEC-05 | Phase 2 | Pending |
+| PROV-02 | Phase 3 | Pending |
+| AGENT-01 | Phase 3 | Pending |
+| AGENT-02 | Phase 3 | Pending |
+| AGENT-03 | Phase 3 | Pending |
+| AGENT-04 | Phase 3 | Pending |
+| AGENT-05 | Phase 3 | Pending |
+| AGENT-06 | Phase 3 | Pending |
+| AGENT-07 | Phase 3 | Pending |
+| AGENT-09 | Phase 3 | Pending |
+| WS-01 | Phase 3 | Pending |
+| WS-02 | Phase 3 | Pending |
+| WS-03 | Phase 3 | Pending |
+| WS-04 | Phase 3 | Pending |
+| MON-01 | Phase 3 | Pending |
+| MON-02 | Phase 3 | Pending |
+| MON-03 | Phase 3 | Pending |
+| MON-04 | Phase 3 | Pending |
+| BUS-01 | Phase 4 | Pending |
+| BUS-02 | Phase 4 | Pending |
+| BUS-03 | Phase 4 | Pending |
+| BUS-04 | Phase 4 | Pending |
+| BUS-05 | Phase 4 | Pending |
+| WS-API-01 | Phase 4 | Pending |
+| WS-API-02 | Phase 4 | Pending |
+| WS-API-03 | Phase 4 | Pending |
+| WS-API-04 | Phase 4 | Pending |
+| OFFICE-01 | Phase 4 | Pending |
+| OFFICE-02 | Phase 4 | Pending |
+| OFFICE-03 | Phase 4 | Pending |
+| OFFICE-04 | Phase 4 | Pending |
+| OFFICE-06 | Phase 4 | Pending |
+| OFFICE-07 | Phase 4 | Pending |
+| CHAT-01 | Phase 4 | Pending |
+| CHAT-02 | Phase 4 | Pending |
+| CHAT-03 | Phase 4 | Pending |
+| CHAT-04 | Phase 4 | Pending |
+| CHAT-05 | Phase 4 | Pending |
+| CHAT-06 | Phase 4 | Pending |
+| CHAT-07 | Phase 4 | Pending |
+| PROV-03 | Phase 5 | Pending |
+| PROV-06 | Phase 5 | Pending |
+| TG-01 | Phase 6 | Pending |
+| TG-02 | Phase 6 | Pending |
+| TG-03 | Phase 6 | Pending |
+| TG-04 | Phase 6 | Pending |
+| TG-05 | Phase 6 | Pending |
+| TG-06 | Phase 6 | Pending |
+| DEP-02 | Phase 7 | Pending |
+| DEP-04 | Phase 7 | Pending |
+| OPS-01 | Phase 7 | Pending |
+| OPS-02 | Phase 7 | Pending |
+| OPS-03 | Phase 7 | Pending |
+| OPS-04 | Phase 7 | Pending |
+| OPS-05 | Phase 7 | Pending |
+| MOB-01 | Phase 7 | Pending |
+| MOB-02 | Phase 7 | Pending |
+| MOB-03 | Phase 7 | Pending |
+| MOB-04 | Phase 7 | Pending |
+| MOB-05 | Phase 7 | Pending |
+| MOB-06 | Phase 7 | Pending |
+| SEC-01 | Phase 7 | Pending |
+| SEC-02 | Phase 7 | Pending |
+| SEC-03 | Phase 7 | Pending |
+| OFFICE-05 | Phase 7 | Pending |
 
 **Coverage:**
-- v1 requirements: 95 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 95
+- v1 requirements: 90 total
+- Mapped to phases: 90
+- Unmapped: 0
+
+**Per-phase counts:**
+- Phase 1 (foundations-and-first-run): 14 requirements
+- Phase 2 (vault-and-provider-abstraction): 12 requirements
+- Phase 3 (single-agent-spawn-claude): 17 requirements
+- Phase 4 (websocket-bus-and-2d-office): 22 requirements
+- Phase 5 (second-provider-openai): 2 requirements
+- Phase 6 (telegram-sidecar-and-queue): 6 requirements
+- Phase 7 (production-hardening-and-mobile-polish): 17 requirements
 
 ---
 *Requirements defined: 2026-05-13*
-*Last updated: 2026-05-13 after initial definition*
+*Last updated: 2026-05-13 after roadmap creation (traceability filled)*
