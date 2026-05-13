@@ -4,49 +4,41 @@
 
 See: .planning/PROJECT.md (updated 2026-05-13)
 
-**Core value:** One command brings up an entire portable office of multi-model coding agents — anywhere — and the owner controls them all from a phone.
-**Current focus:** Phase 1 — foundations-and-first-run
+**Core value:** One local command opens a visual office where the owner can see which agents are working, stuck, done, or close to context limits.
+**Current focus:** Phase 1 - local-app-shell
 
 ## Current Position
 
-Phase: 1 of 7 (foundations-and-first-run)
+Phase: 1 of 5 (local-app-shell)
 Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-05-13 — Roadmap created, 90/90 v1 requirements mapped across 7 phases
+Status: Ready to discuss/plan
+Last activity: 2026-05-13 - Product pivoted from VPS/Docker office to local-first visual agent monitor.
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [----------] 0%
 
 ## Performance Metrics
 
 **Velocity:**
 - Total plans completed: 0
-- Average duration: —
-- Total execution time: —
+- Average duration: -
+- Total execution time: -
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| — | — | — | — |
-
-**Recent Trend:**
-- Last 5 plans: (none yet)
-- Trend: (no data)
-
-*Updated after each plan completion*
+| - | - | - | - |
 
 ## Accumulated Context
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- Init: Docker required, no PTY fallback (security model relies on container isolation)
-- Init: Argon2id (not bcrypt) for admin password hashing — overrides PROJECT.md "bcrypt" mention; aligns with Better-Auth-compatible schema
-- Init: Redis in compose stack from day one — serves bus, WS replay, TG polling lock, TG IPC
-- Init: `Tecnativa/docker-socket-proxy` from day one — backend never mounts `/var/run/docker.sock`
-- Init: Two-layer Bitwarden-style master/data key model for vault; master key written to 3 sinks on first run
+- Pivot: MVP1 is local-first, not VPS/public deployment.
+- Pivot: primary value is visual awareness of local agents, replacing many terminal windows.
+- Pivot: no login/auth in MVP1; bind to localhost by default.
+- Pivot: Claude Code first; other providers later.
+- Pivot: 2D office is the primary UI, not decoration around a conventional dashboard.
+- Superseded: Docker Compose production stack, encrypted vault, Telegram sidecar, Caddy/TLS, public URL, and backup/restore are no longer MVP1 requirements.
 
 ### Pending Todos
 
@@ -54,24 +46,22 @@ None yet.
 
 ### Blockers/Concerns
 
-- Worktree-vs-clone-per-agent decision deferred to Phase 3 spike (research/SUMMARY.md item)
-- Phase 1 egress allowlist mechanism (iptables `DOCKER-USER` vs proxy sidecar) needs research at plan-phase 1 time
-- Phase 7 Caddy mode C (Tailscale) is "best-effort optional" — needs a 1-day spike before promising
+- Need to confirm the exact local Claude Code integration path during Phase 2 planning.
+- Need to decide PixiJS vs simpler Canvas/DOM rendering during Phase 1/3 planning.
+- Existing Phase 1 research was created for the old Docker/VPS direction and should be treated as superseded background only.
 
 ## Deferred Items
 
-Items acknowledged and carried forward — tracked in REQUIREMENTS.md v2 section:
-
 | Category | Item | Status | Deferred At |
 |----------|------|--------|-------------|
-| Inter-agent comms | A2A-01..04 (agents publish to other agents) | v2 / MVP1.5 | 2026-05-13 (roadmap creation) |
-| Providers | PROV-V2-01..03 (Gemini, Ollama, DeepSeek/Mistral routes) | v2 | 2026-05-13 |
-| Multi-user | MU-01..04 (invites, RBAC, OIDC SSO) | v2 | 2026-05-13 |
-| UX polish | UX-V2-01..04 (sprite animations, multi-room, layout editor, themes) | v2 | 2026-05-13 |
-| Ops | OPS-V2-01..04 (Watchtower, Postgres migration, log retention, Prometheus) | v2 | 2026-05-13 |
+| Remote deployment | VPS/public URL/Docker production stack | Later | 2026-05-13 pivot |
+| Secrets | Encrypted vault/API key UI | Later | 2026-05-13 pivot |
+| Providers | OpenAI/Gemini/Ollama | Later | 2026-05-13 pivot |
+| Messaging | Telegram sidecar | Later | 2026-05-13 pivot |
+| Security hardening | Auth, sandboxing, TLS, backup/restore | Later | 2026-05-13 pivot |
 
 ## Session Continuity
 
 Last session: 2026-05-13
-Stopped at: Roadmap and STATE initialized, 7 phases defined, traceability written to REQUIREMENTS.md
-Resume file: None
+Stopped at: Local-first pivot captured; ready to discuss/plan Phase 1 local-app-shell.
+Resume file: .planning/ROADMAP.md
